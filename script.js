@@ -64,7 +64,7 @@ function showQuestion() {
 
     document.querySelector(".question").textContent = word[0];
     document.querySelector(".question").classList.add("flash");
-    setTimeout(() => document.querySelector(".question").classList.remove("flash"), 300);
+    setTimeout(() => document.querySelector(".question").classList.remove("flash"), 500);
 
     let options = [...allAnswers].sort(() => Math.random() - 0.5).slice(0, 3);
     options.push(word);
@@ -90,7 +90,7 @@ function checkAnswer(correct, selected) {
         mistakes.push(correct);
         audioWrong.play();
     }
-    setTimeout(showQuestion, 1000);
+    setTimeout(showQuestion, 250);
 }
 
 function exitGame() {
