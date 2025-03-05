@@ -1,0 +1,117 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 10px;
+    margin: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    /* margin: 10px; */
+    padding: 10px;
+    background: #327ac7;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+
+.btn_part {
+    margin: 10px;
+    padding: 10px;
+    background: #327ac7;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+.correct {
+    background: #4CAF50;
+}
+
+.wrong {
+    background: #F44336;
+}
+
+.score{
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#score {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0px 5px 0px 5px;
+}
+
+.flash {
+    animation: blink 0.3s ease-in-out;
+}
+
+@keyframes blink {
+    0% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.words-list {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    padding: 20px;
+}
+
+.button_start {
+    min-width: 150px;
+    font-size: 18px;
+    /* margin: 20px 0px 20px 0px; */
+    background: #575cc3;
+}
+
+.exitRound {
+    min-width: 150px;
+    font-size: 18px;
+    margin: 20px 0px 20px 0px;
+    background: #575cc3;
+}
+.question {
+    margin: 20px 0px 20px 0px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.button-answ {
+    /* margin: 10px 5px 10px 5px; */
+    margin: 10px;
+    /* width: 160px; */
+    width: calc((100% / 2) - 10px);
+    max-width: 160px;
+    /* min-width: 160px; */
+    min-height: 70px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    
+}
