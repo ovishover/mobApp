@@ -4,8 +4,8 @@ let mistakes = [];
 let currentWords = [];
 let allAnswers = [];
 let score = 0;
-let audioCorrect = new Audio("sounds/correct.mp3");
-let audioWrong = new Audio("sounds/wrong.mp3");
+let audioCorrect = new Audio("correct.mp3");
+let audioWrong = new Audio("wrong.mp3");
 
 async function loadWords() {
     let response = await fetch("words.csv");
